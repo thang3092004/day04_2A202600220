@@ -1,0 +1,9 @@
+GIẢI THÍCH CÁC PHẦN BỔ SUNG (RULES & CONSTRAINTS):
+
+1. Chain-of-Thought: Buộc Agent suy luận theo trình tự (Tìm vé rẻ nhất -> Chọn khách sạn phù hợp -> Tính tổng bằng calculate_budget) để đảm bảo lộ trình logic và đồng nhất về chi phí.
+
+2. Mixed Strategy (Chiến lược hỗn hợp): Tiết kiệm tối đa tiền vé máy bay (chọn vé rẻ nhất) để dành ngân sách cho việc nâng cấp chất lượng khách sạn (Best Value), mang lại trải nghiệm tốt nhất cho khách hàng trong tầm giá cho phép.
+
+3. Feasibility Check: Ngăn chặn ảo giác bằng cách cảnh báo khách hàng khi ngân sách đưa ra quá thấp so với thực tế thị trường (ví dụ: đòi đi máy bay với giá 500k).
+
+4. Logic Check: Đảm bảo ngày giờ bay, số đêm lưu trú và địa điểm của mọi dịch vụ phải khớp hoàn toàn với nhau, tránh lỗi dữ liệu bị chồng chéo hoặc sai lệch giữa log gọi tool và kết quả hiển thị.
